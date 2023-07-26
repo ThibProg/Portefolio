@@ -48,12 +48,14 @@ nav {
 
 /* Section Hero */
 #hero {
-    /*background-image: url('chemin/vers/hero-background.jpg');
+    background-image: url('C:/Users/thiba/Documents/Portefolio/Portefolio/IMG_2796(1).png');
     background-size: cover;
     background-position: center;
-    color: #fff;
+    width: 2000px;
+    height: 530px;
+    color: #000;
     padding: 100px 0;
-    text-align: center;*/
+    text-align: center;
 }
 
     #hero h2 {
@@ -82,34 +84,34 @@ nav {
     }
 
 /* Section Projets */
-#projects {
-    padding: 100px 0;
+
+#projets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.projet {
+    width: 200px;
+    margin: 20px;
     text-align: center;
+    cursor: pointer;
 }
 
-    #projects h2 {
-        font-size: 36px;
-        margin-bottom: 20px;
+    .projet img {
+        width: 100%;
+        height: auto;
+        border: 1px solid #ccc;
+        border-radius: 5px;
     }
 
-.project {
-    margin-bottom: 40px;
-}
-
-    .project img {
-        max-width: 100%;
-        border: 1px solid #ddd;
-        border-radius: 4px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    .project h3 {
-        font-size: 24px;
-        margin-top: 10px;
-    }
-
-    .project p {
-        font-size: 16px;
+    .projet h3 {
+        margin-top: -35px; /* Ajuster cette valeur pour centrer correctement le texte sur l'image */
+        background-color: #fff;
+        display: inline-block;
+        padding: 5px 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
     }
 
 /* Section Contact */
@@ -154,3 +156,7 @@ nav {
         #contact-form button:hover {
             background-color: #ff9900;
         }
+
+footer {
+    text-align: right;
+}
